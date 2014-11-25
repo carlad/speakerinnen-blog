@@ -12,10 +12,15 @@ config = {
     production: {
         url: 'https://speakerinnen.org/blog',
         mail: {},
+        fileStorage: false,
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host: 'ec2-107-20-159-155.compute-1.amazonaws.com',
+                user: 'beakfmxnzoewhy',
+                password: 'WgHYyVFSwZUppA3AEm22xJV_g0',
+                database: 'dfm5dd39tnmasl',
+                port: '5432'
             },
             debug: false
         },
