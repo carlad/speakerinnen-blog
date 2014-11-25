@@ -11,7 +11,7 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'https://speakerinnen-blog.herokuapp.com/',
-        mail: {},
+        mail: { from: 'carladrago@gmail.com' },
         fileStorage: false,
         database: {
             client: 'postgres',
