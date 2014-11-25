@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'https://speakerinnen.org/blog',
+        url: 'https://speakerinnen-blog.herokuapp.com/',
         mail: {},
         fileStorage: false,
         database: {
